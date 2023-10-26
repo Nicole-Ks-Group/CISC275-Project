@@ -1,19 +1,50 @@
 import React, { useState } from "react";
-import { Class } from "./interefaces/class";
+import { Class } from "../interfaces/class";
 
 export function AddDeleteCourses(): JSX.Element {
-    // const [title, setTitle] = useState(""); //Course Title
-    // const [code, setCode] = useState(""); //Course Code
+    const [title, setTitle] = useState(""); //Course Title
+    const [code, setCode] = useState(""); //Course Code
     // const [preReq, setPreReq] = useState([]); //PreReq's
     // const [credits, setCredits] = useState(0);
     // const [semester, setSemester] = useState("");
     // const [year, setYear] = useState(0);
-    const [inputValues, setInputValues] = useState<{ [x:string]: string}>();
+    const [inputValues, setInputValues] = useState<{ [x: string]: string }>();
 
-    const handleChange: (e: any) => {
-        e.preventDefault();
-        this.setState({ [e.target.name]: e.target.value} as Class);
-    }; 
+    const handleChange = (field: string) => (event) => {
+        this.setState({ [field]: event.target.value } as Pick<Class, any>);
+    };
 
-    return <div>Hello</div>;
+    const handleAddCourse = () => {
+        if (title) {
+            setCode([...code, title]);
+            setTitle("");
+        }
+    };
+
+    const handleDeleteCourse = (index) => {
+        const updatedCourses = [...code];
+        updatedCourses.splice(index, 1);
+        setCode(updatedCourses);
+    };
+
+    return (
+        <div>
+            <h1> Add and Delete Courses </h1>
+            <input>
+                type="text" placeholder="Enter Course Title" value={title}
+                handleChange={(e) => setTitle(e.target.value)}
+            </input>
+            <Button onClick={handleAddCourse}>Add Course </Button>
+            <ul>
+                {courses.map((course, index) => (
+                    <li key={index}>
+                        {course}
+                        <Button onClick={() => handleDeleteCourse(index)}>
+                            Delete{" "}
+                        </Button>
+                    </li>
+                ))}
+            </ul>
+        </div>
+    );
 }
