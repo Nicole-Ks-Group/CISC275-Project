@@ -6,24 +6,26 @@ Browserslist: caniuse-lite is outdated. Please run:
   npx browserslist@latest --update-db
   Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
 PASS src/App.test.tsx
-  ✓ renders the course name somewhere (47 ms)
+  ✓ renders the course name somewhere (48 ms)
 
-----------------------------|---------|----------|---------|---------|-------------------
-File                        | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
-----------------------------|---------|----------|---------|---------|-------------------
-All files                   |   18.75 |    16.66 |   10.52 |      20 |                   
- src                        |     100 |      100 |     100 |     100 |                   
-  App.tsx                   |     100 |      100 |     100 |     100 |                   
- src/Components             |   16.12 |    16.66 |    5.55 |   17.24 |                   
-  AddDeleteCourses.tsx      |       0 |        0 |       0 |       0 | 5-113             
-  InsertRemoveSemestert.tsx |       0 |      100 |       0 |       0 | 10-36             
-  SeeSingleSemester.tsx     |   35.71 |       25 |   14.28 |   35.71 | 12-70,78-82       
- src/interfaces             |       0 |        0 |       0 |       0 |                   
-  class.ts                  |       0 |        0 |       0 |       0 |                   
-  semster.ts                |       0 |        0 |       0 |       0 |                   
-----------------------------|---------|----------|---------|---------|-------------------
+---------------------------|---------|----------|---------|---------|-------------------
+File                       | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
+---------------------------|---------|----------|---------|---------|-------------------
+All files                  |   16.21 |    16.66 |    9.09 |   17.14 |                   
+ src                       |     100 |      100 |     100 |     100 |                   
+  App.tsx                  |     100 |      100 |     100 |     100 |                   
+ src/Components            |   13.88 |    16.66 |    4.76 |    14.7 |                   
+  AddDeleteCourses.tsx     |       0 |        0 |       0 |       0 | 5-113             
+  InsertRemoveSemester.tsx |       0 |      100 |       0 |       0 | 11-58             
+  SeeSingleSemester.tsx    |   35.71 |       25 |   14.28 |   35.71 | 12-70,78-82       
+  clearSemesters.tsx       |       0 |      100 |       0 |       0 | 11-14             
+ src/interfaces            |       0 |        0 |       0 |       0 |                   
+  class.ts                 |       0 |        0 |       0 |       0 |                   
+  degreePlan.ts            |       0 |        0 |       0 |       0 |                   
+  semster.ts               |       0 |        0 |       0 |       0 |                   
+---------------------------|---------|----------|---------|---------|-------------------
 Test Suites: 1 passed, 1 total
 Tests:       1 passed, 1 total
 Snapshots:   0 total
-Time:        2.326 s
+Time:        2.264 s
 Ran all test suites.
