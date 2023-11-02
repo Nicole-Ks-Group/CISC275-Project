@@ -6,17 +6,18 @@ Browserslist: caniuse-lite is outdated. Please run:
   npx browserslist@latest --update-db
   Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
 PASS src/App.test.tsx
-  ✓ renders the course name somewhere (48 ms)
+  ✓ renders the course name somewhere (56 ms)
 
 -----------------------------|---------|----------|---------|---------|-------------------
 File                         | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 -----------------------------|---------|----------|---------|---------|-------------------
-All files                    |   27.27 |       10 |   15.38 |   28.57 |                   
+All files                    |   34.92 |    11.11 |   15.15 |   36.06 |                   
  src                         |     100 |      100 |     100 |     100 |                   
   App.tsx                    |     100 |      100 |     100 |     100 |                   
- src/Components              |   25.58 |       10 |      12 |   26.82 |                   
-  AddDeleteCourses.tsx       |      60 |        0 |      40 |   66.66 | 23-26,33          
+ src/Components              |   33.87 |    11.11 |    12.5 |      35 |                   
+  AddDeleteCourses.tsx       |      60 |        0 |      40 |   66.66 | 21-24,31          
   InsertRemoveSemester.tsx   |       0 |      100 |       0 |       0 | 16-66             
+  QuickAdd.tsx               |   52.63 |     12.5 |   14.28 |   52.63 | 14,18-30,35,39    
   SingleMultipleSemester.tsx |    23.8 |     12.5 |      10 |      25 | 14-84,92-96       
   clearSemesters.tsx         |       0 |      100 |       0 |       0 | 11-14             
  src/interfaces              |       0 |        0 |       0 |       0 |                   
@@ -27,5 +28,5 @@ All files                    |   27.27 |       10 |   15.38 |   28.57 |
 Test Suites: 1 passed, 1 total
 Tests:       1 passed, 1 total
 Snapshots:   0 total
-Time:        2.355 s
+Time:        2.482 s
 Ran all test suites.
