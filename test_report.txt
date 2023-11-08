@@ -5,28 +5,55 @@
 Browserslist: caniuse-lite is outdated. Please run:
   npx browserslist@latest --update-db
   Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
-PASS src/App.test.tsx
-  ✓ renders the course name somewhere (38 ms)
+  console.log
+    []
 
------------------------------|---------|----------|---------|---------|-------------------
-File                         | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
------------------------------|---------|----------|---------|---------|-------------------
-All files                    |    7.95 |     4.54 |    5.26 |    8.13 |                   
- src                         |     100 |      100 |     100 |     100 |                   
-  App.tsx                    |     100 |      100 |     100 |     100 |                   
- src/Components              |    6.89 |     4.54 |     2.7 |    7.05 |                   
-  InsertRemoveSemester.tsx   |       0 |      100 |       0 |       0 | 16-66             
-  QuickAdd.tsx               |       0 |        0 |       0 |       0 | 16-60             
-  SingleMultipleSemester.tsx |      25 |     12.5 |    9.09 |   26.08 | 46-156,164-173    
-  SlowAdd.tsx                |       0 |        0 |       0 |       0 | 10-84             
-  clearSemesters.tsx         |       0 |      100 |       0 |       0 | 11-14             
- src/interfaces              |       0 |        0 |       0 |       0 |                   
-  class.ts                   |       0 |        0 |       0 |       0 |                   
-  degreePlan.ts              |       0 |        0 |       0 |       0 |                   
-  semster.ts                 |       0 |        0 |       0 |       0 |                   
------------------------------|---------|----------|---------|---------|-------------------
+      at addCourse (src/Components/SingleMultipleSemester.tsx:72:17)
+
+  console.error
+    Warning: SlowAdd contains an input of type number with both value and defaultValue props. Input elements must be either controlled or uncontrolled (specify either the value prop, or the defaultValue prop, but not both). Decide between using a controlled or uncontrolled input element and remove one of these props. More info: https://reactjs.org/link/controlled-components
+        at input
+        at div
+        at form
+        at SlowAdd (/home/runner/work/CISC275-Project/CISC275-Project/src/Components/SlowAdd.tsx:10:41)
+        at div
+        at div
+        at div
+        at div
+        at SingleMultipleSemester (/home/runner/work/CISC275-Project/CISC275-Project/src/Components/SingleMultipleSemester.tsx:13:39)
+        at div
+        at App
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
+      at initWrapperState (node_modules/react-dom/cjs/react-dom.development.js:1504:7)
+      at setInitialProperties (node_modules/react-dom/cjs/react-dom.development.js:9099:7)
+      at finalizeInitialChildren (node_modules/react-dom/cjs/react-dom.development.js:10201:3)
+      at completeWork (node_modules/react-dom/cjs/react-dom.development.js:19470:17)
+      at completeUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:22812:16)
+
+PASS src/App.test.tsx
+  ✓ renders the course name somewhere (157 ms)
+
+-----------------------------|---------|----------|---------|---------|----------------------------
+File                         | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s          
+-----------------------------|---------|----------|---------|---------|----------------------------
+All files                    |      36 |    13.63 |    12.5 |    37.5 |                            
+ src                         |     100 |      100 |     100 |     100 |                            
+  App.tsx                    |     100 |      100 |     100 |     100 |                            
+ src/Components              |   35.35 |    13.63 |   10.25 |   36.84 |                            
+  InsertRemoveSemester.tsx   |       0 |      100 |       0 |       0 | 16-66                      
+  QuickAdd.tsx               |      44 |    16.66 |   14.28 |      44 | 25,29-43,48,52,56-58       
+  SingleMultipleSemester.tsx |   26.47 |     12.5 |   15.38 |   29.03 | 21,85-142,160              
+  SlowAdd.tsx                |   53.57 |        0 |   11.11 |   55.55 | 42,46,49-51,56,59,63,67-81 
+  clearSemesters.tsx         |       0 |      100 |       0 |       0 | 11-14                      
+ src/interfaces              |       0 |        0 |       0 |       0 |                            
+  class.ts                   |       0 |        0 |       0 |       0 |                            
+  degreePlan.ts              |       0 |        0 |       0 |       0 |                            
+  semster.ts                 |       0 |        0 |       0 |       0 |                            
+-----------------------------|---------|----------|---------|---------|----------------------------
 Test Suites: 1 passed, 1 total
 Tests:       1 passed, 1 total
 Snapshots:   0 total
-Time:        2.621 s
+Time:        2.6 s
 Ran all test suites.
