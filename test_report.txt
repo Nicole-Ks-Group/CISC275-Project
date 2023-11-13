@@ -15,7 +15,7 @@ Browserslist: caniuse-lite is outdated. Please run:
         at div
         at div
         at div
-        at SingleMultipleSemester (/home/runner/work/CISC275-Project/CISC275-Project/src/Components/SingleMultipleSemester.tsx:13:39)
+        at SingleMultipleSemester (/home/runner/work/CISC275-Project/CISC275-Project/src/Components/SingleMultipleSemester.tsx:11:39)
         at div
         at App
 
@@ -28,18 +28,18 @@ Browserslist: caniuse-lite is outdated. Please run:
       at completeUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:22812:16)
 
 PASS src/App.test.tsx
-  ✓ renders the course name somewhere (98 ms)
+  ✓ renders the course name somewhere (95 ms)
 
 -----------------------------|---------|----------|---------|---------|----------------------------
 File                         | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s          
 -----------------------------|---------|----------|---------|---------|----------------------------
-All files                    |   28.45 |     12.5 |    9.61 |   29.41 |                            
+All files                    |   27.64 |     12.5 |    9.43 |   29.05 |                            
  src                         |     100 |      100 |     100 |     100 |                            
   App.tsx                    |     100 |      100 |     100 |     100 |                            
- src/Components              |   27.86 |     12.5 |    7.84 |   28.81 |                            
+ src/Components              |   27.04 |     12.5 |    7.69 |   28.44 |                            
   InsertRemoveSemester.tsx   |       0 |      100 |       0 |       0 | 16-66                      
   QuickAdd.tsx               |   43.47 |    16.66 |   16.66 |   43.47 | 25,29-43,52,56-58          
-  SingleMultipleSemester.tsx |   15.25 |       10 |    7.69 |   16.07 | 22-178,205-279,287-296     
+  SingleMultipleSemester.tsx |   13.55 |       10 |     7.4 |   14.81 | 19-152,179-252,262-271     
   SlowAdd.tsx                |   53.57 |        0 |   11.11 |   55.55 | 42,46,49-51,56,59,63,67-81 
   clearSemesters.tsx         |       0 |      100 |       0 |       0 | 11-14                      
  src/interfaces              |       0 |        0 |       0 |       0 |                            
@@ -50,5 +50,5 @@ All files                    |   28.45 |     12.5 |    9.61 |   29.41 |
 Test Suites: 1 passed, 1 total
 Tests:       1 passed, 1 total
 Snapshots:   0 total
-Time:        2.644 s
+Time:        2.609 s
 Ran all test suites.
