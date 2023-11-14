@@ -33,13 +33,13 @@ PASS src/App.test.tsx
 -----------------------------|---------|----------|---------|---------|----------------------------
 File                         | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s          
 -----------------------------|---------|----------|---------|---------|----------------------------
-All files                    |   27.64 |     12.5 |    9.43 |   29.05 |                            
+All files                    |   27.96 |     12.5 |    9.61 |    29.2 |                            
  src                         |     100 |      100 |     100 |     100 |                            
   App.tsx                    |     100 |      100 |     100 |     100 |                            
- src/Components              |   27.04 |     12.5 |    7.69 |   28.44 |                            
+ src/Components              |   27.35 |     12.5 |    7.84 |   28.57 |                            
   InsertRemoveSemester.tsx   |       0 |      100 |       0 |       0 | 16-66                      
   QuickAdd.tsx               |   43.47 |    16.66 |   16.66 |   43.47 | 25,29-43,52,56-58          
-  SingleMultipleSemester.tsx |   13.55 |       10 |     7.4 |   14.81 | 19-152,179-252,262-271     
+  SingleMultipleSemester.tsx |   12.96 |       10 |    7.69 |      14 | 18-71,87-146,155-164       
   SlowAdd.tsx                |   53.57 |        0 |   11.11 |   55.55 | 42,46,49-51,56,59,63,67-81 
   clearSemesters.tsx         |       0 |      100 |       0 |       0 | 11-14                      
  src/interfaces              |       0 |        0 |       0 |       0 |                            
@@ -50,5 +50,5 @@ All files                    |   27.64 |     12.5 |    9.43 |   29.05 |
 Test Suites: 1 passed, 1 total
 Tests:       1 passed, 1 total
 Snapshots:   0 total
-Time:        2.609 s
+Time:        2.607 s
 Ran all test suites.
