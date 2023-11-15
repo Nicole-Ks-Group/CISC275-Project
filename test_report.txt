@@ -5,19 +5,25 @@
 Browserslist: caniuse-lite is outdated. Please run:
   npx browserslist@latest --update-db
   Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
-  console.error
-    Warning: SlowAdd contains an input of type number with both value and defaultValue props. Input elements must be either controlled or uncontrolled (specify either the value prop, or the defaultValue prop, but not both). Decide between using a controlled or uncontrolled input element and remove one of these props. More info: https://reactjs.org/link/controlled-components
-        at input
-        at div
-        at form
-        at SlowAdd (/home/runner/work/CISC275-Project/CISC275-Project/src/Components/SlowAdd.tsx:10:41)
-        at div
-        at div
-        at div
-        at div
-        at SingleMultipleSemester (/home/runner/work/CISC275-Project/CISC275-Project/src/Components/SingleMultipleSemester.tsx:11:39)
-        at div
-        at App
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+PASS src/App.test.tsx
+  ● Console
+
+    console.error
+      Warning: SlowAdd contains an input of type number with both value and defaultValue props. Input elements must be either controlled or uncontrolled (specify either the value prop, or the defaultValue prop, but not both). Decide between using a controlled or uncontrolled input element and remove one of these props. More info: https://reactjs.org/link/controlled-components
+          at input
+          at div
+          at form
+          at SlowAdd (/home/runner/work/CISC275-Project/CISC275-Project/src/Components/SlowAdd.tsx:10:41)
+          at div
+          at div
+          at div
+          at div
+          at SingleMultipleSemester (/home/runner/work/CISC275-Project/CISC275-Project/src/Components/SingleMultipleSemester.tsx:11:39)
+          at div
+          at App
 
       at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
       at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
@@ -26,29 +32,91 @@ Browserslist: caniuse-lite is outdated. Please run:
       at finalizeInitialChildren (node_modules/react-dom/cjs/react-dom.development.js:10201:3)
       at completeWork (node_modules/react-dom/cjs/react-dom.development.js:19470:17)
       at completeUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:22812:16)
+      at performUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:22787:5)
 
-PASS src/App.test.tsx
-  ✓ renders the course name somewhere (95 ms)
+PASS src/Components/planner.test.tsx
+  ● Console
 
------------------------------|---------|----------|---------|---------|----------------------------
-File                         | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s          
------------------------------|---------|----------|---------|---------|----------------------------
-All files                    |   27.96 |     12.5 |    9.61 |    29.2 |                            
- src                         |     100 |      100 |     100 |     100 |                            
-  App.tsx                    |     100 |      100 |     100 |     100 |                            
- src/Components              |   27.35 |     12.5 |    7.84 |   28.57 |                            
-  InsertRemoveSemester.tsx   |       0 |      100 |       0 |       0 | 16-66                      
-  QuickAdd.tsx               |   43.47 |    16.66 |   16.66 |   43.47 | 25,29-43,52,56-58          
-  SingleMultipleSemester.tsx |   12.96 |       10 |    7.69 |      14 | 18-71,87-146,155-164       
-  SlowAdd.tsx                |   53.57 |        0 |   11.11 |   55.55 | 42,46,49-51,56,59,63,67-81 
-  clearSemesters.tsx         |       0 |      100 |       0 |       0 | 11-14                      
- src/interfaces              |       0 |        0 |       0 |       0 |                            
-  class.ts                   |       0 |        0 |       0 |       0 |                            
-  degreePlan.ts              |       0 |        0 |       0 |       0 |                            
-  semster.ts                 |       0 |        0 |       0 |       0 |                            
------------------------------|---------|----------|---------|---------|----------------------------
-Test Suites: 1 passed, 1 total
-Tests:       1 passed, 1 total
+    console.error
+      Warning: SlowAdd contains an input of type number with both value and defaultValue props. Input elements must be either controlled or uncontrolled (specify either the value prop, or the defaultValue prop, but not both). Decide between using a controlled or uncontrolled input element and remove one of these props. More info: https://reactjs.org/link/controlled-components
+          at input
+          at div
+          at form
+          at SlowAdd (/home/runner/work/CISC275-Project/CISC275-Project/src/Components/SlowAdd.tsx:10:41)
+          at div
+          at div
+          at div
+          at div
+          at SingleMultipleSemester (/home/runner/work/CISC275-Project/CISC275-Project/src/Components/SingleMultipleSemester.tsx:11:39)
+          at div
+          at App
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
+      at initWrapperState (node_modules/react-dom/cjs/react-dom.development.js:1504:7)
+      at setInitialProperties (node_modules/react-dom/cjs/react-dom.development.js:9099:7)
+      at finalizeInitialChildren (node_modules/react-dom/cjs/react-dom.development.js:10201:3)
+      at completeWork (node_modules/react-dom/cjs/react-dom.development.js:19470:17)
+      at completeUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:22812:16)
+      at performUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:22787:5)
+
+    console.log
+      [ ' ' ]
+
+      at addForClicked (src/Components/SingleMultipleSemester.tsx:110:17)
+
+    console.log
+      []
+
+      at addtable (src/Components/SingleMultipleSemester.tsx:40:17)
+          at Array.map (<anonymous>)
+
+    console.error
+      Warning: Each child in a list should have a unique "key" prop.
+      
+      Check the render method of `SingleMultipleSemester`. See https://reactjs.org/link/warning-keys for more information.
+          at div
+          at SingleMultipleSemester (/home/runner/work/CISC275-Project/CISC275-Project/src/Components/SingleMultipleSemester.tsx:11:39)
+          at div
+          at App
+
+      184 |                 </Col>
+      185 |             </Form.Group>
+    > 186 |             <div>
+          |             ^
+      187 |                 {clicked
+      188 |                     ? addForClicked(semArrClicked)
+      189 |                     : "Enter and Click semester(s) to view classes"}
+
+      at printWarning (node_modules/react/cjs/react-jsx-dev-runtime.development.js:117:30)
+      at error (node_modules/react/cjs/react-jsx-dev-runtime.development.js:93:5)
+      at validateExplicitKey (node_modules/react/cjs/react-jsx-dev-runtime.development.js:986:5)
+      at validateChildKeys (node_modules/react/cjs/react-jsx-dev-runtime.development.js:1013:11)
+      at jsxWithValidation (node_modules/react/cjs/react-jsx-dev-runtime.development.js:1184:11)
+      at SingleMultipleSemester (src/Components/SingleMultipleSemester.tsx:186:13)
+      at renderWithHooks (node_modules/react-dom/cjs/react-dom.development.js:14985:18)
+      at updateFunctionComponent (node_modules/react-dom/cjs/react-dom.development.js:17356:20)
+
+-----------------------------|---------|----------|---------|---------|--------------------------------
+File                         | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s              
+-----------------------------|---------|----------|---------|---------|--------------------------------
+All files                    |   56.77 |     37.5 |   40.38 |    58.4 |                                
+ src                         |     100 |      100 |     100 |     100 |                                
+  App.tsx                    |     100 |      100 |     100 |     100 |                                
+ src/Components              |   56.41 |     37.5 |   39.21 |   58.03 |                                
+  InsertRemoveSemester.tsx   |       0 |      100 |       0 |       0 | 16-66                          
+  QuickAdd.tsx               |   65.21 |    33.33 |      50 |   65.21 | 25,34-40,52,56-58              
+  SingleMultipleSemester.tsx |   66.66 |       50 |   61.53 |      70 | 21,63-71,87-99,118,123-126,139 
+  SlowAdd.tsx                |   53.57 |        0 |   11.11 |   55.55 | 42,46,49-51,56,59,63,67-81     
+  clearSemesters.tsx         |       0 |      100 |       0 |       0 | 11-14                          
+ src/interfaces              |       0 |        0 |       0 |       0 |                                
+  class.ts                   |       0 |        0 |       0 |       0 |                                
+  degreePlan.ts              |       0 |        0 |       0 |       0 |                                
+  semster.ts                 |       0 |        0 |       0 |       0 |                                
+-----------------------------|---------|----------|---------|---------|--------------------------------
+
+Test Suites: 2 passed, 2 total
+Tests:       5 passed, 5 total
 Snapshots:   0 total
-Time:        2.607 s
+Time:        3.374 s
 Ran all test suites.
