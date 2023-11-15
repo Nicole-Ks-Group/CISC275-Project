@@ -100,10 +100,12 @@ PASS src/Components/planner.test.tsx
 -----------------------------|---------|----------|---------|---------|--------------------------------
 File                         | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s              
 -----------------------------|---------|----------|---------|---------|--------------------------------
-All files                    |   56.77 |     37.5 |   40.38 |    58.4 |                                
+All files                    |   46.85 |    32.14 |   32.81 |   47.82 |                                
  src                         |     100 |      100 |     100 |     100 |                                
   App.tsx                    |     100 |      100 |     100 |     100 |                                
- src/Components              |   56.41 |     37.5 |   39.21 |   58.03 |                                
+ src/Components              |   46.47 |    32.14 |   31.74 |   47.44 |                                
+  DeleteCourses.tsx          |       0 |      100 |       0 |       0 | 9-20                           
+  EditCourses.tsx            |       0 |        0 |       0 |       0 | 11-56                          
   InsertRemoveSemester.tsx   |       0 |      100 |       0 |       0 | 16-66                          
   QuickAdd.tsx               |   65.21 |    33.33 |      50 |   65.21 | 25,34-40,52,56-58              
   SingleMultipleSemester.tsx |   66.66 |       50 |   61.53 |      70 | 21,63-71,87-99,118,123-126,139 
@@ -118,5 +120,5 @@ All files                    |   56.77 |     37.5 |   40.38 |    58.4 |
 Test Suites: 2 passed, 2 total
 Tests:       5 passed, 5 total
 Snapshots:   0 total
-Time:        3.374 s
+Time:        3.493 s
 Ran all test suites.
