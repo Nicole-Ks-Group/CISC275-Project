@@ -159,16 +159,16 @@ FAIL src/Components/planner.test.tsx
 -----------------------------|---------|----------|---------|---------|-------------------
 File                         | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 -----------------------------|---------|----------|---------|---------|-------------------
-All files                    |    5.59 |     7.89 |    4.16 |    5.76 |                   
+All files                    |    5.42 |     7.89 |       4 |    5.62 |                   
  src                         |     100 |       75 |     100 |     100 |                   
   App.tsx                    |     100 |       75 |     100 |     100 | 37                
- src/Components              |    2.56 |        0 |    2.81 |    2.64 |                   
+ src/Components              |    2.48 |        0 |     2.7 |    2.58 |                   
   DegreePlanView.tsx         |      40 |        0 |   33.33 |      40 | 20-33,41          
   DeleteCourses.tsx          |       0 |      100 |       0 |       0 | 9-20              
   EditCourses.tsx            |       0 |        0 |       0 |       0 | 11-56             
   InsertRemoveSemester.tsx   |       0 |      100 |       0 |       0 | 16-66             
   QuickAdd.tsx               |       0 |        0 |       0 |       0 | 17-62             
-  SingleMultipleSemester.tsx |       0 |        0 |       0 |       0 | 30-208            
+  SingleMultipleSemester.tsx |       0 |        0 |       0 |       0 | 31-221            
   SlowAdd.tsx                |       0 |        0 |       0 |       0 | 10-85             
   clearSemesters.tsx         |       0 |      100 |       0 |       0 | 11-14             
  src/interfaces              |       0 |        0 |       0 |       0 |                   
@@ -180,5 +180,5 @@ All files                    |    5.59 |     7.89 |    4.16 |    5.76 |
 Test Suites: 1 failed, 1 passed, 2 total
 Tests:       2 failed, 3 passed, 5 total
 Snapshots:   0 total
-Time:        3.518 s
+Time:        3.443 s
 Ran all test suites.
