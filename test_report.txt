@@ -9,176 +9,109 @@ Browserslist: caniuse-lite is outdated. Please run:
   npx browserslist@latest --update-db
   Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
 PASS src/App.test.tsx
-FAIL src/Components/planner.test.tsx
-  ● Project Component tests › Adding classes to a semester
+PASS src/Components/planner.test.tsx
+  ● Console
 
-    TestingLibraryElementError: Unable to find an element by: [data-testid="courseCode"]
+    console.error
+      Warning: SlowAdd contains an input of type number with both value and defaultValue props. Input elements must be either controlled or uncontrolled (specify either the value prop, or the defaultValue prop, but not both). Decide between using a controlled or uncontrolled input element and remove one of these props. More info: https://reactjs.org/link/controlled-components
+          at input
+          at div
+          at form
+          at SlowAdd (/home/runner/work/CISC275-Project/CISC275-Project/src/Components/SlowAdd.tsx:10:41)
+          at div
+          at div
+          at div
+          at div
+          at SingleMultipleSemester (/home/runner/work/CISC275-Project/CISC275-Project/src/Components/SingleMultipleSemester.tsx:19:5)
+          at div
+          at App (/home/runner/work/CISC275-Project/CISC275-Project/src/App.tsx:18:29)
 
-    Ignored nodes: comments, <script />, <style />
-    [36m<body>[39m
-      [36m<div>[39m
-        [36m<div[39m
-          [33mclass[39m=[32m"App"[39m
-        [36m>[39m
-          [36m<header[39m
-            [33mclass[39m=[32m"App-header"[39m
-          [36m>[39m
-            [0mUD CISC275 with React Hooks and TypeScript[0m
-          [36m</header>[39m
-          [36m<div>[39m
-            [36m<ul>[39m
-              [36m<li>[39m
-                [36m<button[39m
-                  [33mclass[39m=[32m"btn btn-primary"[39m
-                  [33mtype[39m=[32m"button"[39m
-                [36m>[39m
-                  [0mPlan 1[0m
-                [36m</button>[39m
-              [36m</li>[39m
-              [36m<li>[39m
-                [36m<button[39m
-                  [33mclass[39m=[32m"btn btn-primary"[39m
-                  [33mtype[39m=[32m"button"[39m
-                [36m>[39m
-                  [0mPlan 2[0m
-                [36m</button>[39m
-              [36m</li>[39m
-              [36m<li>[39m
-                [36m<button[39m
-                  [33mclass[39m=[32m"btn btn-primary"[39m
-                  [33mtype[39m=[32m"button"[39m
-                [36m>[39m
-                  [0mPlan 3[0m
-                [36m</button>[39m
-              [36m</li>[39m
-            [36m</ul>[39m
-            [36m<button[39m
-              [33mclass[39m=[32m"btn btn-primary"[39m
-              [33mtype[39m=[32m"button"[39m
-            [36m>[39m
-              [0mView Semesters[0m
-            [36m</button>[39m
-            [36m<button[39m
-              [33mclass[39m=[32m"btn btn-primary"[39m
-              [33mtype[39m=[32m"button"[39m
-            [36m>[39m
-              [0mGo Back to Degree Plans[0m
-            [36m</button>[39m
-          [36m</div>[39m
-        [36m</div>[39m
-      [36m</div>[39m
-    [36m</body>[39m
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
+      at initWrapperState (node_modules/react-dom/cjs/react-dom.development.js:1504:7)
+      at setInitialProperties (node_modules/react-dom/cjs/react-dom.development.js:9099:7)
+      at finalizeInitialChildren (node_modules/react-dom/cjs/react-dom.development.js:10201:3)
+      at completeWork (node_modules/react-dom/cjs/react-dom.development.js:19470:17)
+      at completeUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:22812:16)
+      at performUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:22787:5)
 
-      16 |         const class1 = CLASSES[2].courseCode;
-      17 |         const class2 = "RED234";
-    > 18 |         const input1 = screen.getByTestId("courseCode");
-         |                               ^
-      19 |         const button = screen.getByText("Search");
-      20 |         input1.setAttribute("value", class1);
-      21 |         button.click();
+    console.log
+      [ '' ]
 
-      at Object.getElementError (node_modules/@testing-library/dom/dist/config.js:38:19)
-      at node_modules/@testing-library/dom/dist/query-helpers.js:90:38
-      at node_modules/@testing-library/dom/dist/query-helpers.js:62:17
-      at getByTestId (node_modules/@testing-library/dom/dist/query-helpers.js:111:19)
-      at Object.<anonymous> (src/Components/planner.test.tsx:18:31)
+      at addForClickedSem (src/Components/SingleMultipleSemester.tsx:173:17)
 
-  ● Project Component tests › Add semesters
+    console.log
+      []
 
-    TestingLibraryElementError: Unable to find an element with the text: Enter. This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible.
+      at addtable (src/Components/SingleMultipleSemester.tsx:90:17)
+          at Array.map (<anonymous>)
 
-    Ignored nodes: comments, <script />, <style />
-    [36m<body>[39m
-      [36m<div>[39m
-        [36m<div[39m
-          [33mclass[39m=[32m"App"[39m
-        [36m>[39m
-          [36m<header[39m
-            [33mclass[39m=[32m"App-header"[39m
-          [36m>[39m
-            [0mUD CISC275 with React Hooks and TypeScript[0m
-          [36m</header>[39m
-          [36m<div>[39m
-            [36m<ul>[39m
-              [36m<li>[39m
-                [36m<button[39m
-                  [33mclass[39m=[32m"btn btn-primary"[39m
-                  [33mtype[39m=[32m"button"[39m
-                [36m>[39m
-                  [0mPlan 1[0m
-                [36m</button>[39m
-              [36m</li>[39m
-              [36m<li>[39m
-                [36m<button[39m
-                  [33mclass[39m=[32m"btn btn-primary"[39m
-                  [33mtype[39m=[32m"button"[39m
-                [36m>[39m
-                  [0mPlan 2[0m
-                [36m</button>[39m
-              [36m</li>[39m
-              [36m<li>[39m
-                [36m<button[39m
-                  [33mclass[39m=[32m"btn btn-primary"[39m
-                  [33mtype[39m=[32m"button"[39m
-                [36m>[39m
-                  [0mPlan 3[0m
-                [36m</button>[39m
-              [36m</li>[39m
-            [36m</ul>[39m
-            [36m<button[39m
-              [33mclass[39m=[32m"btn btn-primary"[39m
-              [33mtype[39m=[32m"button"[39m
-            [36m>[39m
-              [0mView Semesters[0m
-            [36m</button>[39m
-            [36m<button[39m
-              [33mclass[39m=[32m"btn btn-primary"[39m
-              [33mtype[39m=[32m"button"[39m
-            [36m>[39m
-              [0mGo Back to Degree Plans[0m
-            [36m</button>[39m
-          [36m</div>[39m
-        [36m</div>[39m
-      [36m</div>[39m
-    [36m</body>[39m
+    console.error
+      Warning: Each child in a list should have a unique "key" prop.
+      
+      Check the render method of `SingleMultipleSemester`. See https://reactjs.org/link/warning-keys for more information.
+          at div
+          at SingleMultipleSemester (/home/runner/work/CISC275-Project/CISC275-Project/src/Components/SingleMultipleSemester.tsx:19:5)
+          at div
+          at App (/home/runner/work/CISC275-Project/CISC275-Project/src/App.tsx:18:29)
 
-      37 |     test("Add semesters", () => {
-      38 |         const addSem = "Spring 2026";
-    > 39 |         const enterButton = screen.getByText("Enter");
-         |                                    ^
-      40 |         enterButton.click();
-      41 |         const checkbox = screen.getByTestId("semesters");
-      42 |         checkbox.click();
+      243 |                 <DeleteCourses onDeleteCourse={onDeleteCourse} />
+      244 |             )}
+    > 245 |             <div>
+          |             ^
+      246 |                 {clicked
+      247 |                     ? addForClickedSem(semArrClicked)
+      248 |                     : "Enter and Click semester(s) to view classes"}
 
-      at Object.getElementError (node_modules/@testing-library/dom/dist/config.js:38:19)
-      at node_modules/@testing-library/dom/dist/query-helpers.js:90:38
-      at node_modules/@testing-library/dom/dist/query-helpers.js:62:17
-      at getByText (node_modules/@testing-library/dom/dist/query-helpers.js:111:19)
-      at Object.<anonymous> (src/Components/planner.test.tsx:39:36)
+      at printWarning (node_modules/react/cjs/react-jsx-dev-runtime.development.js:117:30)
+      at error (node_modules/react/cjs/react-jsx-dev-runtime.development.js:93:5)
+      at validateExplicitKey (node_modules/react/cjs/react-jsx-dev-runtime.development.js:986:5)
+      at validateChildKeys (node_modules/react/cjs/react-jsx-dev-runtime.development.js:1013:11)
+      at jsxWithValidation (node_modules/react/cjs/react-jsx-dev-runtime.development.js:1184:11)
+      at SingleMultipleSemester (src/Components/SingleMultipleSemester.tsx:245:13)
+      at renderWithHooks (node_modules/react-dom/cjs/react-dom.development.js:14985:18)
+      at updateFunctionComponent (node_modules/react-dom/cjs/react-dom.development.js:17356:20)
 
------------------------------|---------|----------|---------|---------|-------------------
-File                         | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
------------------------------|---------|----------|---------|---------|-------------------
-All files                    |    5.35 |      7.5 |    3.94 |    5.59 |                   
- src                         |     100 |       75 |     100 |     100 |                   
-  App.tsx                    |     100 |       75 |     100 |     100 | 37                
- src/Components              |    2.45 |        0 |    2.66 |    2.56 |                   
-  DegreePlanView.tsx         |      40 |        0 |   33.33 |      40 | 20-33,41          
-  DeleteCourses.tsx          |       0 |      100 |       0 |       0 | 9-20              
-  EditCourses.tsx            |       0 |        0 |       0 |       0 | 11-56             
-  InsertRemoveSemester.tsx   |       0 |      100 |       0 |       0 | 16-66             
-  QuickAdd.tsx               |       0 |        0 |       0 |       0 | 17-62             
-  SingleMultipleSemester.tsx |       0 |        0 |       0 |       0 | 32-224            
-  SlowAdd.tsx                |       0 |        0 |       0 |       0 | 10-85             
-  clearSemesters.tsx         |       0 |      100 |       0 |       0 | 11-14             
- src/interfaces              |       0 |        0 |       0 |       0 |                   
-  class.ts                   |       0 |        0 |       0 |       0 |                   
-  degreePlan.ts              |       0 |        0 |       0 |       0 |                   
-  semster.ts                 |       0 |        0 |       0 |       0 |                   
-  viewProps.ts               |       0 |        0 |       0 |       0 |                   
------------------------------|---------|----------|---------|---------|-------------------
-Test Suites: 1 failed, 1 passed, 2 total
-Tests:       2 failed, 3 passed, 5 total
+    console.log
+      [ '' ]
+
+      at addForClickedSem (src/Components/SingleMultipleSemester.tsx:173:17)
+
+    console.log
+      []
+
+      at addtable (src/Components/SingleMultipleSemester.tsx:90:17)
+          at Array.map (<anonymous>)
+
+    console.log
+      []
+
+      at addForClickedSem (src/Components/SingleMultipleSemester.tsx:173:17)
+
+-----------------------------|---------|----------|---------|---------|------------------------------------------
+File                         | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s                        
+-----------------------------|---------|----------|---------|---------|------------------------------------------
+All files                    |    48.8 |       40 |   36.84 |   49.68 |                                          
+ src                         |     100 |      100 |     100 |     100 |                                          
+  App.tsx                    |     100 |      100 |     100 |     100 |                                          
+ src/Components              |   47.23 |    33.33 |      36 |   48.07 |                                          
+  DegreePlanView.tsx         |      80 |       25 |   83.33 |      80 | 30-33                                    
+  DeleteCourses.tsx          |       0 |      100 |       0 |       0 | 9-20                                     
+  EditCourses.tsx            |       0 |        0 |       0 |       0 | 11-56                                    
+  InsertRemoveSemester.tsx   |       0 |      100 |       0 |       0 | 16-66                                    
+  QuickAdd.tsx               |   65.21 |    33.33 |      50 |   65.21 | 25,34-40,52,56-58                        
+  SingleMultipleSemester.tsx |      60 |       50 |   56.25 |   62.71 | 47-59,71,113-121,137-149,160-167,196,206 
+  SlowAdd.tsx                |   53.57 |        0 |   11.11 |   55.55 | 42,46,49-51,56,59,63,67-81               
+  clearSemesters.tsx         |       0 |      100 |       0 |       0 | 11-14                                    
+ src/interfaces              |       0 |        0 |       0 |       0 |                                          
+  class.ts                   |       0 |        0 |       0 |       0 |                                          
+  degreePlan.ts              |       0 |        0 |       0 |       0 |                                          
+  semster.ts                 |       0 |        0 |       0 |       0 |                                          
+  viewProps.ts               |       0 |        0 |       0 |       0 |                                          
+-----------------------------|---------|----------|---------|---------|------------------------------------------
+
+Test Suites: 2 passed, 2 total
+Tests:       4 passed, 4 total
 Snapshots:   0 total
-Time:        3.571 s
+Time:        3.546 s
 Ran all test suites.
