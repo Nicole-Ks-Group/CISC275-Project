@@ -205,6 +205,7 @@ export function SingleMultipleSemester({
     function updateSemester1(event: React.ChangeEvent<HTMLInputElement>) {
         setSemester1(event.target.value);
     }
+
     return (
         <div>
             {addCourse()}
