@@ -4,14 +4,16 @@ import { Class } from "../interfaces/class";
 import QuickAdd from "./QuickAdd";
 import SlowAdd from "./SlowAdd";
 import DeleteCourse from "./DeleteCourses";
-
+import CourseSearch from "./QuickAdd";
 import { Button } from "react-bootstrap";
 
-function EditCourses(): JSX.Element {
+export function EditCourses(): JSX.Element {
     const [courses, setCourses] = useState<Class[]>([]);
     const [editCourseCode, setEditCourseCode] = useState<string | null>(null);
 
-    const handleCourseInfo = (courseInfo: Class) => {
+    const handleCourseInfo = (
+        courseInfo: Class & { semester?: string; year?: string }
+    ) => {
         if (editCourseCode) {
             // Edit existing course
             setCourses((prevCourses) =>
@@ -37,7 +39,7 @@ function EditCourses(): JSX.Element {
 
     const handleEditCourse = (courseCode: string) => {
         setEditCourseCode(courseCode);
-        //pre-filling the form with existing course data
+        // pre-filling the form with existing course data
     };
 
     return (
@@ -45,6 +47,7 @@ function EditCourses(): JSX.Element {
             <SlowAdd onCourseInfo={handleCourseInfo} />
             <QuickAdd onCourseInfo={handleCourseInfo} />
             <DeleteCourse onDeleteCourse={handleDeleteCourse} />
+            <CourseSearch onCourseInfo={handleCourseInfo} />
 
             {/* course components here */}
             <h2>Courses</h2>
@@ -63,4 +66,3 @@ function EditCourses(): JSX.Element {
         </div>
     );
 }
-export default EditCourses;
