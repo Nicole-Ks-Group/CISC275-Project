@@ -24,7 +24,7 @@ PASS src/Components/planner.test.tsx
           at div
           at SingleMultipleSemester (/home/runner/work/CISC275-Project/CISC275-Project/src/Components/SingleMultipleSemester.tsx:19:5)
           at div
-          at App (/home/runner/work/CISC275-Project/CISC275-Project/src/App.tsx:18:29)
+          at App (/home/runner/work/CISC275-Project/CISC275-Project/src/App.tsx:30:29)
 
       at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
       at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
@@ -53,7 +53,7 @@ PASS src/Components/planner.test.tsx
           at div
           at SingleMultipleSemester (/home/runner/work/CISC275-Project/CISC275-Project/src/Components/SingleMultipleSemester.tsx:19:5)
           at div
-          at App (/home/runner/work/CISC275-Project/CISC275-Project/src/App.tsx:18:29)
+          at App (/home/runner/work/CISC275-Project/CISC275-Project/src/App.tsx:30:29)
 
       245 |                 <DeleteCourses onDeleteCourse={onDeleteCourse} />
       246 |             )} */}
@@ -91,9 +91,9 @@ PASS src/Components/planner.test.tsx
 -----------------------------|---------|----------|---------|---------|--------------------------------------
 File                         | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s                    
 -----------------------------|---------|----------|---------|---------|--------------------------------------
-All files                    |   46.74 |     37.5 |   35.06 |   47.85 |                                      
- src                         |     100 |      100 |     100 |     100 |                                      
-  App.tsx                    |     100 |      100 |     100 |     100 |                                      
+All files                    |   45.93 |     37.5 |   34.17 |   46.98 |                                      
+ src                         |    62.5 |      100 |   33.33 |    62.5 |                                      
+  App.tsx                    |    62.5 |      100 |   33.33 |    62.5 | 25-27,45                             
  src/Components              |   45.12 |    30.55 |   34.21 |    46.2 |                                      
   DegreePlanView.tsx         |      80 |       25 |   83.33 |      80 | 30-33                                
   DeleteCourses.tsx          |       0 |      100 |       0 |       0 | 9-20                                 
@@ -113,5 +113,5 @@ All files                    |   46.74 |     37.5 |   35.06 |   47.85 |
 Test Suites: 2 passed, 2 total
 Tests:       4 passed, 4 total
 Snapshots:   0 total
-Time:        3.541 s
+Time:        3.62 s
 Ran all test suites.
