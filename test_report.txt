@@ -94,11 +94,33 @@ PASS src/Components/planner.test.tsx
   ● Console
 
     console.error
+      Warning: Functions are not valid as a React child. This may happen if you return a Component instead of <Component /> from render. Or maybe you meant to call this function rather than return it.
+          at div
+          at form
+          at SlowAdd (/home/runner/work/CISC275-Project/CISC275-Project/src/Components/SlowAdd.tsx:11:41)
+          at div
+          at div
+          at div
+          at div
+          at SingleMultipleSemester (/home/runner/work/CISC275-Project/CISC275-Project/src/Components/SingleMultipleSemester.tsx:19:5)
+          at div
+          at App (/home/runner/work/CISC275-Project/CISC275-Project/src/App.tsx:31:29)
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
+      at warnOnFunctionType (node_modules/react-dom/cjs/react-dom.development.js:13247:5)
+      at createChild (node_modules/react-dom/cjs/react-dom.development.js:13474:9)
+      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:13719:25)
+      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:14125:14)
+      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:16990:28)
+      at updateHostComponent (node_modules/react-dom/cjs/react-dom.development.js:17632:3)
+
+    console.error
       Warning: SlowAdd contains an input of type number with both value and defaultValue props. Input elements must be either controlled or uncontrolled (specify either the value prop, or the defaultValue prop, but not both). Decide between using a controlled or uncontrolled input element and remove one of these props. More info: https://reactjs.org/link/controlled-components
           at input
           at div
           at form
-          at SlowAdd (/home/runner/work/CISC275-Project/CISC275-Project/src/Components/SlowAdd.tsx:10:41)
+          at SlowAdd (/home/runner/work/CISC275-Project/CISC275-Project/src/Components/SlowAdd.tsx:11:41)
           at div
           at div
           at div
@@ -119,12 +141,12 @@ PASS src/Components/planner.test.tsx
     console.log
       [ '' ]
 
-      at addForClickedSem (src/Components/SingleMultipleSemester.tsx:180:17)
+      at addForClickedSem (src/Components/SingleMultipleSemester.tsx:201:17)
 
     console.log
       []
 
-      at addtable (src/Components/SingleMultipleSemester.tsx:91:17)
+      at addtable (src/Components/SingleMultipleSemester.tsx:94:17)
           at Array.map (<anonymous>)
 
     console.error
@@ -136,75 +158,75 @@ PASS src/Components/planner.test.tsx
           at div
           at App (/home/runner/work/CISC275-Project/CISC275-Project/src/App.tsx:31:29)
 
-      245 |                 <DeleteCourses onDeleteCourse={onDeleteCourse} />
-      246 |             )} */}
-    > 247 |             <div>
+      266 |                 <DeleteCourses onDeleteCourse={onDeleteCourse} />
+      267 |             )} */}
+    > 268 |             <div>
           |             ^
-      248 |                 {clicked
-      249 |                     ? addForClickedSem(semArrClicked)
-      250 |                     : "Enter and Click semester(s) to view classes"}
+      269 |                 {clicked
+      270 |                     ? addForClickedSem(semArrClicked)
+      271 |                     : "Enter and Click semester(s) to view classes"}
 
       at printWarning (node_modules/react/cjs/react-jsx-dev-runtime.development.js:117:30)
       at error (node_modules/react/cjs/react-jsx-dev-runtime.development.js:93:5)
       at validateExplicitKey (node_modules/react/cjs/react-jsx-dev-runtime.development.js:986:5)
       at validateChildKeys (node_modules/react/cjs/react-jsx-dev-runtime.development.js:1013:11)
       at jsxWithValidation (node_modules/react/cjs/react-jsx-dev-runtime.development.js:1184:11)
-      at SingleMultipleSemester (src/Components/SingleMultipleSemester.tsx:247:13)
+      at SingleMultipleSemester (src/Components/SingleMultipleSemester.tsx:268:13)
       at renderWithHooks (node_modules/react-dom/cjs/react-dom.development.js:14985:18)
       at updateFunctionComponent (node_modules/react-dom/cjs/react-dom.development.js:17356:20)
 
     console.log
       [ '' ]
 
-      at addForClickedSem (src/Components/SingleMultipleSemester.tsx:180:17)
+      at addForClickedSem (src/Components/SingleMultipleSemester.tsx:201:17)
 
     console.log
       []
 
-      at addtable (src/Components/SingleMultipleSemester.tsx:91:17)
+      at addtable (src/Components/SingleMultipleSemester.tsx:94:17)
           at Array.map (<anonymous>)
 
     console.log
       []
 
-      at addForClickedSem (src/Components/SingleMultipleSemester.tsx:180:17)
+      at addForClickedSem (src/Components/SingleMultipleSemester.tsx:201:17)
 
     console.log
       [ '' ]
 
-      at addForClickedSem (src/Components/SingleMultipleSemester.tsx:180:17)
+      at addForClickedSem (src/Components/SingleMultipleSemester.tsx:201:17)
 
     console.log
       []
 
-      at addtable (src/Components/SingleMultipleSemester.tsx:91:17)
+      at addtable (src/Components/SingleMultipleSemester.tsx:94:17)
           at Array.map (<anonymous>)
 
     console.log
       [ '' ]
 
-      at addForClickedSem (src/Components/SingleMultipleSemester.tsx:180:17)
+      at addForClickedSem (src/Components/SingleMultipleSemester.tsx:201:17)
 
     console.log
       []
 
-      at addtable (src/Components/SingleMultipleSemester.tsx:91:17)
+      at addtable (src/Components/SingleMultipleSemester.tsx:94:17)
           at Array.map (<anonymous>)
 
 -----------------------------|---------|----------|---------|---------|----------------------------------
 File                         | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s                
 -----------------------------|---------|----------|---------|---------|----------------------------------
-All files                    |   50.58 |       40 |    40.5 |    51.2 |                                  
+All files                    |    49.7 |       40 |   41.02 |    50.3 |                                  
  src                         |    62.5 |      100 |   33.33 |    62.5 |                                  
   App.tsx                    |    62.5 |      100 |   33.33 |    62.5 | 26-28,46                         
- src/Components              |      50 |    33.33 |   40.78 |   50.63 |                                  
+ src/Components              |   49.07 |    33.33 |   41.33 |   49.68 |                                  
   DegreePlanView.tsx         |      80 |       25 |   83.33 |      80 | 30-33                            
   DeleteCourses.tsx          |       0 |      100 |       0 |       0 | 9-20                             
   EditCourses.tsx            |       0 |        0 |       0 |       0 | 11-56                            
   InsertRemoveSemester.tsx   |       0 |      100 |       0 |       0 | 16-66                            
-  QuickAdd.tsx               |   65.21 |    33.33 |      50 |   65.21 | 25,34-40,52,56-58                
-  SingleMultipleSemester.tsx |   66.66 |       50 |   66.66 |   68.85 | 48-60,72,117-125,141-153,203,213 
-  SlowAdd.tsx                |   53.57 |        0 |   11.11 |   55.55 | 42,46,49-51,56,59,63,67-81       
+  QuickAdd.tsx               |   68.18 |    33.33 |      50 |   68.18 | 25,34-40,52,56-58                
+  SingleMultipleSemester.tsx |   66.66 |       50 |   66.66 |   68.85 | 48-60,72,125-133,149-163,224,234 
+  SlowAdd.tsx                |   46.42 |        0 |    12.5 |   48.14 | 43,47,50-52,57,63,67-96          
   clearSemesters.tsx         |       0 |      100 |       0 |       0 | 11-14                            
  src/interfaces              |       0 |        0 |       0 |       0 |                                  
   class.ts                   |       0 |        0 |       0 |       0 |                                  
@@ -216,5 +238,5 @@ All files                    |   50.58 |       40 |    40.5 |    51.2 |
 Test Suites: 1 failed, 1 passed, 2 total
 Tests:       1 failed, 4 passed, 5 total
 Snapshots:   0 total
-Time:        3.528 s
+Time:        3.581 s
 Ran all test suites.
