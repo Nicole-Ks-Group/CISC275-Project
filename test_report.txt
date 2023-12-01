@@ -8,7 +8,88 @@ Browserslist: caniuse-lite is outdated. Please run:
 Browserslist: caniuse-lite is outdated. Please run:
   npx browserslist@latest --update-db
   Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
-PASS src/App.test.tsx
+FAIL src/App.test.tsx
+  ● renders the course name somewhere
+
+    TestingLibraryElementError: Unable to find an element with the text: /CISC275/i. This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible.
+
+    Ignored nodes: comments, <script />, <style />
+    [36m<body>[39m
+      [36m<div>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"App"[39m
+        [36m>[39m
+          [36m<header[39m
+            [33mclass[39m=[32m"App-header"[39m
+          [36m>[39m
+            [36m<img[39m
+              [33malt[39m=[32m"BH"[39m
+              [33msrc[39m=[32m"logo.png"[39m
+              [33mwidth[39m=[32m"100"[39m
+            [36m/>[39m
+            [0m CS Degree Planner[0m
+          [36m</header>[39m
+          [36m<button>[39m
+            [0mCreate New Degree Plan[0m
+          [36m</button>[39m
+          [36m<div>[39m
+            [36m<ul>[39m
+              [36m<li>[39m
+                [36m<button[39m
+                  [33mclass[39m=[32m"btn btn-primary"[39m
+                  [33mtype[39m=[32m"button"[39m
+                [36m>[39m
+                  [0mPlan 1[0m
+                [36m</button>[39m
+              [36m</li>[39m
+              [36m<li>[39m
+                [36m<button[39m
+                  [33mclass[39m=[32m"btn btn-primary"[39m
+                  [33mtype[39m=[32m"button"[39m
+                [36m>[39m
+                  [0mPlan 2[0m
+                [36m</button>[39m
+              [36m</li>[39m
+              [36m<li>[39m
+                [36m<button[39m
+                  [33mclass[39m=[32m"btn btn-primary"[39m
+                  [33mtype[39m=[32m"button"[39m
+                [36m>[39m
+                  [0mPlan 3[0m
+                [36m</button>[39m
+              [36m</li>[39m
+            [36m</ul>[39m
+            [36m<button[39m
+              [33mclass[39m=[32m"btn btn-primary"[39m
+              [33mtype[39m=[32m"button"[39m
+            [36m>[39m
+              [0mView Semesters[0m
+            [36m</button>[39m
+            [36m<button[39m
+              [33mclass[39m=[32m"btn btn-primary"[39m
+              [33mtype[39m=[32m"button"[39m
+            [36m>[39m
+              [0mGo Back to Degree Plans[0m
+            [36m</button>[39m
+          [36m</div>[39m
+        [36m</div>[39m
+      [36m</div>[39m
+    [36m</body>[39m
+
+       5 | test("renders the course name somewhere", () => {
+       6 |     render(<App />);
+    >  7 |     const linkElement = screen.getByText(/CISC275/i);
+         |                                ^
+       8 |     expect(linkElement).toBeInTheDocument();
+       9 | });
+      10 |
+
+      at Object.getElementError (node_modules/@testing-library/dom/dist/config.js:38:19)
+      at node_modules/@testing-library/dom/dist/query-helpers.js:90:38
+      at node_modules/@testing-library/dom/dist/query-helpers.js:62:17
+      at getByText (node_modules/@testing-library/dom/dist/query-helpers.js:111:19)
+      at Object.<anonymous> (src/App.test.tsx:7:32)
+
 PASS src/Components/planner.test.tsx
   ● Console
 
@@ -24,7 +105,7 @@ PASS src/Components/planner.test.tsx
           at div
           at SingleMultipleSemester (/home/runner/work/CISC275-Project/CISC275-Project/src/Components/SingleMultipleSemester.tsx:19:5)
           at div
-          at App (/home/runner/work/CISC275-Project/CISC275-Project/src/App.tsx:30:29)
+          at App (/home/runner/work/CISC275-Project/CISC275-Project/src/App.tsx:31:29)
 
       at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
       at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
@@ -53,7 +134,7 @@ PASS src/Components/planner.test.tsx
           at div
           at SingleMultipleSemester (/home/runner/work/CISC275-Project/CISC275-Project/src/Components/SingleMultipleSemester.tsx:19:5)
           at div
-          at App (/home/runner/work/CISC275-Project/CISC275-Project/src/App.tsx:30:29)
+          at App (/home/runner/work/CISC275-Project/CISC275-Project/src/App.tsx:31:29)
 
       245 |                 <DeleteCourses onDeleteCourse={onDeleteCourse} />
       246 |             )} */}
@@ -93,7 +174,7 @@ File                         | % Stmts | % Branch | % Funcs | % Lines | Uncovere
 -----------------------------|---------|----------|---------|---------|--------------------------------------
 All files                    |   45.93 |     37.5 |   34.17 |   46.98 |                                      
  src                         |    62.5 |      100 |   33.33 |    62.5 |                                      
-  App.tsx                    |    62.5 |      100 |   33.33 |    62.5 | 25-27,45                             
+  App.tsx                    |    62.5 |      100 |   33.33 |    62.5 | 26-28,46                             
  src/Components              |   45.12 |    30.55 |   34.21 |    46.2 |                                      
   DegreePlanView.tsx         |      80 |       25 |   83.33 |      80 | 30-33                                
   DeleteCourses.tsx          |       0 |      100 |       0 |       0 | 9-20                                 
@@ -110,8 +191,8 @@ All files                    |   45.93 |     37.5 |   34.17 |   46.98 |
   viewProps.ts               |       0 |        0 |       0 |       0 |                                      
 -----------------------------|---------|----------|---------|---------|--------------------------------------
 
-Test Suites: 2 passed, 2 total
-Tests:       4 passed, 4 total
+Test Suites: 1 failed, 1 passed, 2 total
+Tests:       1 failed, 3 passed, 4 total
 Snapshots:   0 total
-Time:        3.62 s
+Time:        3.621 s
 Ran all test suites.
