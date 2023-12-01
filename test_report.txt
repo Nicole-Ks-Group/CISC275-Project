@@ -169,30 +169,52 @@ PASS src/Components/planner.test.tsx
 
       at addForClickedSem (src/Components/SingleMultipleSemester.tsx:180:17)
 
------------------------------|---------|----------|---------|---------|--------------------------------------
-File                         | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s                    
------------------------------|---------|----------|---------|---------|--------------------------------------
-All files                    |   45.93 |     37.5 |   34.17 |   46.98 |                                      
- src                         |    62.5 |      100 |   33.33 |    62.5 |                                      
-  App.tsx                    |    62.5 |      100 |   33.33 |    62.5 | 26-28,46                             
- src/Components              |   45.12 |    30.55 |   34.21 |    46.2 |                                      
-  DegreePlanView.tsx         |      80 |       25 |   83.33 |      80 | 30-33                                
-  DeleteCourses.tsx          |       0 |      100 |       0 |       0 | 9-20                                 
-  EditCourses.tsx            |       0 |        0 |       0 |       0 | 11-56                                
-  InsertRemoveSemester.tsx   |       0 |      100 |       0 |       0 | 16-66                                
-  QuickAdd.tsx               |   65.21 |    33.33 |      50 |   65.21 | 25,34-40,52,56-58                    
-  SingleMultipleSemester.tsx |   54.54 |    42.85 |   51.51 |   57.37 | 48-60,72,105,117-125,141-175,203,213 
-  SlowAdd.tsx                |   53.57 |        0 |   11.11 |   55.55 | 42,46,49-51,56,59,63,67-81           
-  clearSemesters.tsx         |       0 |      100 |       0 |       0 | 11-14                                
- src/interfaces              |       0 |        0 |       0 |       0 |                                      
-  class.ts                   |       0 |        0 |       0 |       0 |                                      
-  degreePlan.ts              |       0 |        0 |       0 |       0 |                                      
-  semster.ts                 |       0 |        0 |       0 |       0 |                                      
-  viewProps.ts               |       0 |        0 |       0 |       0 |                                      
------------------------------|---------|----------|---------|---------|--------------------------------------
+    console.log
+      [ '' ]
+
+      at addForClickedSem (src/Components/SingleMultipleSemester.tsx:180:17)
+
+    console.log
+      []
+
+      at addtable (src/Components/SingleMultipleSemester.tsx:91:17)
+          at Array.map (<anonymous>)
+
+    console.log
+      [ '' ]
+
+      at addForClickedSem (src/Components/SingleMultipleSemester.tsx:180:17)
+
+    console.log
+      []
+
+      at addtable (src/Components/SingleMultipleSemester.tsx:91:17)
+          at Array.map (<anonymous>)
+
+-----------------------------|---------|----------|---------|---------|----------------------------------
+File                         | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s                
+-----------------------------|---------|----------|---------|---------|----------------------------------
+All files                    |   50.58 |       40 |    40.5 |    51.2 |                                  
+ src                         |    62.5 |      100 |   33.33 |    62.5 |                                  
+  App.tsx                    |    62.5 |      100 |   33.33 |    62.5 | 26-28,46                         
+ src/Components              |      50 |    33.33 |   40.78 |   50.63 |                                  
+  DegreePlanView.tsx         |      80 |       25 |   83.33 |      80 | 30-33                            
+  DeleteCourses.tsx          |       0 |      100 |       0 |       0 | 9-20                             
+  EditCourses.tsx            |       0 |        0 |       0 |       0 | 11-56                            
+  InsertRemoveSemester.tsx   |       0 |      100 |       0 |       0 | 16-66                            
+  QuickAdd.tsx               |   65.21 |    33.33 |      50 |   65.21 | 25,34-40,52,56-58                
+  SingleMultipleSemester.tsx |   66.66 |       50 |   66.66 |   68.85 | 48-60,72,117-125,141-153,203,213 
+  SlowAdd.tsx                |   53.57 |        0 |   11.11 |   55.55 | 42,46,49-51,56,59,63,67-81       
+  clearSemesters.tsx         |       0 |      100 |       0 |       0 | 11-14                            
+ src/interfaces              |       0 |        0 |       0 |       0 |                                  
+  class.ts                   |       0 |        0 |       0 |       0 |                                  
+  degreePlan.ts              |       0 |        0 |       0 |       0 |                                  
+  semster.ts                 |       0 |        0 |       0 |       0 |                                  
+  viewProps.ts               |       0 |        0 |       0 |       0 |                                  
+-----------------------------|---------|----------|---------|---------|----------------------------------
 
 Test Suites: 1 failed, 1 passed, 2 total
-Tests:       1 failed, 3 passed, 4 total
+Tests:       1 failed, 4 passed, 5 total
 Snapshots:   0 total
-Time:        3.621 s
+Time:        3.528 s
 Ran all test suites.
