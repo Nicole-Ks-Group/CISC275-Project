@@ -66,3 +66,5 @@ export function EditCourses(): JSX.Element {
         </div>
     );
 }
+
+export default EditCourses;
