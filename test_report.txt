@@ -35,17 +35,6 @@ PASS src/Components/planner.test.tsx
       at completeUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:22812:16)
       at performUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:22787:5)
 
-    console.log
-      [ '' ]
-
-      at addForClickedSem (src/Components/Planner.tsx:242:17)
-
-    console.log
-      []
-
-      at addtable (src/Components/Planner.tsx:119:17)
-          at Array.map (<anonymous>)
-
     console.error
       Warning: Each child in a list should have a unique "key" prop.
       
@@ -55,86 +44,48 @@ PASS src/Components/planner.test.tsx
           at div
           at App (/home/runner/work/CISC275-Project/CISC275-Project/src/App.tsx:21:29)
 
-      334 |                 <DeleteCourses onDeleteCourse={onDeleteCourse} />
-      335 |             )} */}
-    > 336 |             <div>
+      365 |                 <DeleteCourses onDeleteCourse={onDeleteCourse} />
+      366 |             )} */}
+    > 367 |             <div>
           |             ^
-      337 |                 {clicked
-      338 |                     ? addForClickedSem(semArrClicked)
-      339 |                     : "Enter and Click semester(s) to view classes"}
+      368 |                 {clicked
+      369 |                     ? addForClickedSem(semArrClicked)
+      370 |                     : "Enter and Click semester(s) to view classes"}
 
       at printWarning (node_modules/react/cjs/react-jsx-dev-runtime.development.js:117:30)
       at error (node_modules/react/cjs/react-jsx-dev-runtime.development.js:93:5)
       at validateExplicitKey (node_modules/react/cjs/react-jsx-dev-runtime.development.js:986:5)
       at validateChildKeys (node_modules/react/cjs/react-jsx-dev-runtime.development.js:1013:11)
       at jsxWithValidation (node_modules/react/cjs/react-jsx-dev-runtime.development.js:1184:11)
-      at Planner (src/Components/Planner.tsx:336:13)
+      at Planner (src/Components/Planner.tsx:367:13)
       at renderWithHooks (node_modules/react-dom/cjs/react-dom.development.js:14985:18)
       at updateFunctionComponent (node_modules/react-dom/cjs/react-dom.development.js:17356:20)
 
-    console.log
-      [ '' ]
-
-      at addForClickedSem (src/Components/Planner.tsx:242:17)
-
-    console.log
-      []
-
-      at addtable (src/Components/Planner.tsx:119:17)
-          at Array.map (<anonymous>)
-
-    console.log
-      []
-
-      at addForClickedSem (src/Components/Planner.tsx:242:17)
-
-    console.log
-      [ '' ]
-
-      at addForClickedSem (src/Components/Planner.tsx:242:17)
-
-    console.log
-      []
-
-      at addtable (src/Components/Planner.tsx:119:17)
-          at Array.map (<anonymous>)
-
-    console.log
-      [ '' ]
-
-      at addForClickedSem (src/Components/Planner.tsx:242:17)
-
-    console.log
-      []
-
-      at addtable (src/Components/Planner.tsx:119:17)
-          at Array.map (<anonymous>)
-
------------------------------|---------|----------|---------|---------|-------------------------------------------------------------------
-File                         | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s                                                 
------------------------------|---------|----------|---------|---------|-------------------------------------------------------------------
-All files                    |   49.19 |    40.47 |    38.2 |      50 |                                                                   
- src                         |     100 |      100 |     100 |     100 |                                                                   
-  App.tsx                    |     100 |      100 |     100 |     100 |                                                                   
- src/Components              |    47.8 |    34.21 |    37.5 |   48.57 |                                                                   
-  DegreePlanView.tsx         |   72.72 |       25 |   71.42 |   72.72 | 35-38,47                                                          
-  DeleteCourses.tsx          |       0 |      100 |       0 |       0 | 9-20                                                              
-  EditCourses.tsx            |       0 |        0 |       0 |       0 | 12-31                                                             
-  InsertRemoveDegreePlan.tsx |   42.85 |      100 |      40 |   42.85 | 34-39                                                             
-  InsertRemoveSemester.tsx   |       0 |      100 |       0 |       0 | 16-66                                                             
-  Planner.tsx                |   55.81 |    44.44 |   48.88 |   56.79 | 38,43-53,66-79,91-101,139-160,166-174,190-204,265,275-281,288-292 
-  QuickAdd.tsx               |   68.18 |    33.33 |      50 |   68.18 | 25,34-40,52,56-58                                                 
-  SlowAdd.tsx                |   46.42 |        0 |    12.5 |   48.14 | 43,47,50-52,57,63,67-96                                           
-  clearSemesters.tsx         |       0 |      100 |       0 |       0 | 11-14                                                             
- src/interfaces              |       0 |        0 |       0 |       0 |                                                                   
-  class.ts                   |       0 |        0 |       0 |       0 |                                                                   
-  degreePlan.ts              |       0 |        0 |       0 |       0 |                                                                   
-  semster.ts                 |       0 |        0 |       0 |       0 |                                                                   
-  viewProps.ts               |       0 |        0 |       0 |       0 |                                                                   
------------------------------|---------|----------|---------|---------|-------------------------------------------------------------------
+-----------------------------|---------|----------|---------|---------|------------------------------------------------------------
+File                         | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s                                          
+-----------------------------|---------|----------|---------|---------|------------------------------------------------------------
+All files                    |   42.78 |    35.71 |   31.46 |   44.44 |                                                            
+ src                         |     100 |      100 |     100 |     100 |                                                            
+  App.tsx                    |     100 |      100 |     100 |     100 |                                                            
+ src/Components              |    41.2 |    28.94 |   30.68 |   42.85 |                                                            
+  DegreePlanView.tsx         |   72.72 |       25 |   71.42 |   72.72 | 35-38,47                                                   
+  DeleteCourses.tsx          |       0 |      100 |       0 |       0 | 9-20                                                       
+  EditCourses.tsx            |       0 |        0 |       0 |       0 | 12-31                                                      
+  InsertRemoveDegreePlan.tsx |   42.85 |      100 |      40 |   42.85 | 34-39                                                      
+  InsertRemoveSemester.tsx   |       0 |      100 |       0 |       0 | 16-66                                                      
+  Planner.tsx                |   41.86 |    33.33 |   35.55 |   44.44 | 38,48-66,79-92,104-121,160-190,196-203,220-267,295,305-313 
+  QuickAdd.tsx               |   68.18 |    33.33 |      50 |   68.18 | 25,34-40,52,56-58                                          
+  SlowAdd.tsx                |   46.42 |        0 |    12.5 |   48.14 | 43,47,50-52,57,63,67-96                                    
+  clearSemesters.tsx         |       0 |      100 |       0 |       0 | 11-14                                                      
+ src/interfaces              |       0 |        0 |       0 |       0 |                                                            
+  class.ts                   |       0 |        0 |       0 |       0 |                                                            
+  degreePlan.ts              |       0 |        0 |       0 |       0 |                                                            
+  semster.ts                 |       0 |        0 |       0 |       0 |                                                            
+  viewProps.ts               |       0 |        0 |       0 |       0 |                                                            
+-----------------------------|---------|----------|---------|---------|------------------------------------------------------------
 
 Test Suites: 2 passed, 2 total
 Tests:       5 passed, 5 total
 Snapshots:   0 total
-Time:        3.736 s
+Time:        3.576 s
 Ran all test suites.
