@@ -22,7 +22,7 @@ PASS src/Components/planner.test.tsx
           at div
           at div
           at div
-          at Planner (/home/runner/work/CISC275-Project/CISC275-Project/src/Components/Planner.tsx:19:5)
+          at Planner (/home/runner/work/CISC275-Project/CISC275-Project/src/Components/Planner.tsx:20:5)
           at div
           at App (/home/runner/work/CISC275-Project/CISC275-Project/src/App.tsx:21:29)
 
@@ -40,52 +40,52 @@ PASS src/Components/planner.test.tsx
       
       Check the render method of `Planner`. See https://reactjs.org/link/warning-keys for more information.
           at div
-          at Planner (/home/runner/work/CISC275-Project/CISC275-Project/src/Components/Planner.tsx:19:5)
+          at Planner (/home/runner/work/CISC275-Project/CISC275-Project/src/Components/Planner.tsx:20:5)
           at div
           at App (/home/runner/work/CISC275-Project/CISC275-Project/src/App.tsx:21:29)
 
-      364 |                 <DeleteCourses onDeleteCourse={onDeleteCourse} />
-      365 |             )} */}
-    > 366 |             <div>
+      389 |                 <DeleteCourses onDeleteCourse={onDeleteCourse} />
+      390 |             )} */}
+    > 391 |             <div>
           |             ^
-      367 |                 {clicked
-      368 |                     ? addForClickedSem(semArrClicked)
-      369 |                     : "Enter and Click semester(s) to view classes"}
+      392 |                 {clicked
+      393 |                     ? addForClickedSem(semArrClicked)
+      394 |                     : "Enter and Click semester(s) to view classes"}
 
       at printWarning (node_modules/react/cjs/react-jsx-dev-runtime.development.js:117:30)
       at error (node_modules/react/cjs/react-jsx-dev-runtime.development.js:93:5)
       at validateExplicitKey (node_modules/react/cjs/react-jsx-dev-runtime.development.js:986:5)
       at validateChildKeys (node_modules/react/cjs/react-jsx-dev-runtime.development.js:1013:11)
       at jsxWithValidation (node_modules/react/cjs/react-jsx-dev-runtime.development.js:1184:11)
-      at Planner (src/Components/Planner.tsx:366:13)
+      at Planner (src/Components/Planner.tsx:391:13)
       at renderWithHooks (node_modules/react-dom/cjs/react-dom.development.js:14985:18)
       at updateFunctionComponent (node_modules/react-dom/cjs/react-dom.development.js:17356:20)
 
------------------------------|---------|----------|---------|---------|---------------------------------------------------------
-File                         | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s                                       
------------------------------|---------|----------|---------|---------|---------------------------------------------------------
-All files                    |   42.16 |    35.71 |   32.18 |   43.57 |                                                         
- src                         |     100 |      100 |     100 |     100 |                                                         
-  App.tsx                    |     100 |      100 |     100 |     100 |                                                         
- src/Components              |   40.55 |    28.94 |   31.39 |   41.95 |                                                         
-  DegreePlanView.tsx         |   72.72 |       25 |   71.42 |   72.72 | 35-38,47                                                
-  DeleteCourses.tsx          |       0 |      100 |       0 |       0 | 9-20                                                    
-  EditCourses.tsx            |       0 |        0 |       0 |       0 | 13-37                                                   
-  InsertRemoveDegreePlan.tsx |   42.85 |      100 |      40 |   42.85 | 34-39                                                   
-  InsertRemoveSemester.tsx   |       0 |      100 |       0 |       0 | 16-66                                                   
-  Planner.tsx                |    42.5 |     37.5 |   38.09 |   44.73 | 47-63,79-92,104-114,155-185,191-198,219-266,294,304-312 
-  QuickAdd.tsx               |   68.18 |    33.33 |      50 |   68.18 | 25,34-40,52,56-58                                       
-  SlowAdd.tsx                |   46.42 |        0 |    12.5 |   48.14 | 43,47,50-52,57,63,67-96                                 
-  clearSemesters.tsx         |       0 |      100 |       0 |       0 | 11-14                                                   
- src/interfaces              |       0 |        0 |       0 |       0 |                                                         
-  class.ts                   |       0 |        0 |       0 |       0 |                                                         
-  degreePlan.ts              |       0 |        0 |       0 |       0 |                                                         
-  semster.ts                 |       0 |        0 |       0 |       0 |                                                         
-  viewProps.ts               |       0 |        0 |       0 |       0 |                                                         
------------------------------|---------|----------|---------|---------|---------------------------------------------------------
+-----------------------------|---------|----------|---------|---------|----------------------------------------------------------
+File                         | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s                                        
+-----------------------------|---------|----------|---------|---------|----------------------------------------------------------
+All files                    |   40.41 |     32.6 |   30.43 |   41.71 |                                                          
+ src                         |     100 |      100 |     100 |     100 |                                                          
+  App.tsx                    |     100 |      100 |     100 |     100 |                                                          
+ src/Components              |   38.82 |    26.19 |   29.67 |    40.1 |                                                          
+  DegreePlanView.tsx         |   72.72 |       25 |   71.42 |   72.72 | 35-38,47                                                 
+  DeleteCourses.tsx          |       0 |      100 |       0 |       0 | 9-20                                                     
+  EditCourses.tsx            |       0 |        0 |       0 |       0 | 13-36                                                    
+  InsertRemoveDegreePlan.tsx |   42.85 |      100 |      40 |   42.85 | 34-39                                                    
+  InsertRemoveSemester.tsx   |       0 |      100 |       0 |       0 | 16-66                                                    
+  Planner.tsx                |    38.2 |       30 |   34.04 |      40 | 48-65,81-116,126-147,180-210,216-223,244-291,319,329-337 
+  QuickAdd.tsx               |   68.18 |    33.33 |      50 |   68.18 | 25,34-40,52,56-58                                        
+  SlowAdd.tsx                |   46.42 |        0 |    12.5 |   48.14 | 43,47,50-52,57,63,67-96                                  
+  clearSemesters.tsx         |       0 |      100 |       0 |       0 | 11-14                                                    
+ src/interfaces              |       0 |        0 |       0 |       0 |                                                          
+  class.ts                   |       0 |        0 |       0 |       0 |                                                          
+  degreePlan.ts              |       0 |        0 |       0 |       0 |                                                          
+  semster.ts                 |       0 |        0 |       0 |       0 |                                                          
+  viewProps.ts               |       0 |        0 |       0 |       0 |                                                          
+-----------------------------|---------|----------|---------|---------|----------------------------------------------------------
 
 Test Suites: 2 passed, 2 total
 Tests:       5 passed, 5 total
 Snapshots:   0 total
-Time:        3.968 s
+Time:        3.657 s
 Ran all test suites.
