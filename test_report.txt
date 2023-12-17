@@ -41,15 +41,15 @@ PASS src/Components/planner.test.tsx
 -------------------------------------|---------|----------|---------|---------|------------------------------------------------------------------------------------------------------
 File                                 | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s                                                                                    
 -------------------------------------|---------|----------|---------|---------|------------------------------------------------------------------------------------------------------
-All files                            |   28.64 |    19.23 |   22.38 |   29.18 |                                                                                                      
+All files                            |    28.8 |     19.6 |   22.05 |   29.34 |                                                                                                      
  src                                 |   69.23 |    66.66 |      50 |   69.23 |                                                                                                      
   App.tsx                            |   69.23 |    66.66 |      50 |   69.23 | 29-34                                                                                                
- src/Components                      |   27.19 |    16.32 |   21.53 |   27.73 |                                                                                                      
-  ComputerScienceRequirements.tsx    |    3.77 |        0 |       0 |    3.77 | 16-44,50-210                                                                                         
+ src/Components                      |   27.34 |    16.66 |   21.21 |   27.88 |                                                                                                      
+  ComputerScienceRequirements.tsx    |     3.7 |        0 |       0 |     3.7 | 16-44,50-215                                                                                         
   DegreePlanView.tsx                 |   71.42 |       50 |      60 |   71.42 | 33-34,49-52,68                                                                                       
   DeleteCourses.tsx                  |       0 |      100 |       0 |       0 | 9-20                                                                                                 
   EditCourses.tsx                    |       0 |        0 |       0 |       0 | 13-39                                                                                                
-  InformationSystemsRequirements.tsx |    3.77 |        0 |       0 |    3.77 | 16-44,50-210                                                                                         
+  InformationSystemsRequirements.tsx |       4 |        0 |       0 |       4 | 16-32,38-200                                                                                         
   InsertRemoveDegreePlan.tsx         |       0 |      100 |       0 |       0 | 16-41                                                                                                
   InsertRemoveSemester.tsx           |       0 |      100 |       0 |       0 | 16-66                                                                                                
   Planner.tsx                        |   35.71 |    28.94 |   32.14 |   37.03 | 65-77,91-109,127-162,168-184,190-191,195-212,217-218,227-248,281-311,317-325,346-393,406,421,431-439 
@@ -66,5 +66,5 @@ All files                            |   28.64 |    19.23 |   22.38 |   29.18 |
 Test Suites: 2 passed, 2 total
 Tests:       5 passed, 5 total
 Snapshots:   0 total
-Time:        4.177 s
+Time:        4.301 s
 Ran all test suites.
