@@ -21,38 +21,38 @@ PASS src/Components/planner.test.tsx
           at div
           at App (/home/runner/work/CISC275-Project/CISC275-Project/src/App.tsx:11:29)
 
-      502 |                 <DeleteCourses onDeleteCourse={onDeleteCourse} />
-      503 |             )} */}
-    > 504 |             <div>
+      473 |                 <DeleteCourses onDeleteCourse={onDeleteCourse} />
+      474 |             )} */}
+    > 475 |             <div>
           |             ^
-      505 |                 {clicked
-      506 |                     ? addForClickedSem(semArrClicked)
-      507 |                     : "Enter and Click semester(s) to view classes"}
+      476 |                 {clicked
+      477 |                     ? addForClickedSem(semArrClicked)
+      478 |                     : "Enter and Click semester(s) to view classes"}
 
       at printWarning (node_modules/react/cjs/react-jsx-dev-runtime.development.js:117:30)
       at error (node_modules/react/cjs/react-jsx-dev-runtime.development.js:93:5)
       at validateExplicitKey (node_modules/react/cjs/react-jsx-dev-runtime.development.js:986:5)
       at validateChildKeys (node_modules/react/cjs/react-jsx-dev-runtime.development.js:1013:11)
       at jsxWithValidation (node_modules/react/cjs/react-jsx-dev-runtime.development.js:1184:11)
-      at Planner (src/Components/Planner.tsx:504:13)
+      at Planner (src/Components/Planner.tsx:475:13)
       at renderWithHooks (node_modules/react-dom/cjs/react-dom.development.js:14985:18)
       at updateFunctionComponent (node_modules/react-dom/cjs/react-dom.development.js:17356:20)
 
 -------------------------------------|---------|----------|---------|---------|------------------------------------------------------------------------------------------------------
 File                                 | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s                                                                                    
 -------------------------------------|---------|----------|---------|---------|------------------------------------------------------------------------------------------------------
-All files                            |    28.8 |     19.6 |   22.05 |   29.34 |                                                                                                      
+All files                            |   28.49 |    18.86 |   21.89 |   29.03 |                                                                                                      
  src                                 |   69.23 |    66.66 |      50 |   69.23 |                                                                                                      
   App.tsx                            |   69.23 |    66.66 |      50 |   69.23 | 29-34                                                                                                
- src/Components                      |   27.34 |    16.66 |   21.21 |   27.88 |                                                                                                      
+ src/Components                      |   27.04 |       16 |   21.05 |   27.57 |                                                                                                      
   ComputerScienceRequirements.tsx    |     3.7 |        0 |       0 |     3.7 | 16-44,50-215                                                                                         
   DegreePlanView.tsx                 |   71.42 |       50 |      60 |   71.42 | 33-34,49-52,68                                                                                       
   DeleteCourses.tsx                  |       0 |      100 |       0 |       0 | 9-20                                                                                                 
-  EditCourses.tsx                    |       0 |        0 |       0 |       0 | 13-39                                                                                                
+  EditCourses.tsx                    |       0 |        0 |       0 |       0 | 15-48                                                                                                
   InformationSystemsRequirements.tsx |       4 |        0 |       0 |       4 | 16-32,38-200                                                                                         
   InsertRemoveDegreePlan.tsx         |       0 |      100 |       0 |       0 | 16-41                                                                                                
   InsertRemoveSemester.tsx           |       0 |      100 |       0 |       0 | 16-66                                                                                                
-  Planner.tsx                        |   35.71 |    28.94 |   32.14 |   37.03 | 65-77,91-109,127-162,168-184,190-191,195-212,217-218,227-248,281-311,317-325,346-393,406,421,431-439 
+  Planner.tsx                        |   35.46 |    26.19 |   31.57 |   36.76 | 65-77,92-119,135-170,176-192,198-199,203-220,225-226,235-253,286-317,323-331,350-385,397,412,422-430 
   QuickAdd.tsx                       |    62.5 |    28.57 |      50 |    62.5 | 25,34-40,52,56-64                                                                                    
   SlowAdd.tsx                        |   45.45 |        0 |   11.11 |   46.87 | 44,48,51-53,57,61,67,71-106                                                                          
   clearSemesters.tsx                 |       0 |      100 |       0 |       0 | 11-14                                                                                                
@@ -66,5 +66,5 @@ All files                            |    28.8 |     19.6 |   22.05 |   29.34 |
 Test Suites: 2 passed, 2 total
 Tests:       5 passed, 5 total
 Snapshots:   0 total
-Time:        4.301 s
+Time:        4.267 s
 Ran all test suites.
