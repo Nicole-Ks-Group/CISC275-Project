@@ -75,8 +75,8 @@ const InformationSystemsRequirements: React.FC<
     ];
     const mathCoreRequirements = ["MATH241", "MATH210", "MATH205"];
 
-    const capstoneRequirements1 = ["CISC498", "CISC499"];
-    const capstoneRequirements2 = ["UNIV401", "UNIV402"];
+    const capstoneRequirements1 = ["CISC498", "&", "CISC499"];
+    const capstoneRequirements2 = ["UNIV401", "&", "UNIV402"];
 
     const universityRequirements = ["ENGL110", "EGGG101", "CISC355"];
     const nonMajorRequirements = [
@@ -88,7 +88,7 @@ const InformationSystemsRequirements: React.FC<
         "COMM212",
         "CISC355"
     ];
-    const writingOptionRequirements = ["ENGL312 or ENGL410"];
+    const writingOptionRequirements = ["ENGL312", "ENGL410"];
 
     const biologyLabRequirements = ["BISC207", "BISC208"];
     const chemistryLabRequirements = [
