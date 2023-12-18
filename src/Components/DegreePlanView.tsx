@@ -71,7 +71,7 @@ export const DegreePlanView = ({
                     </li>
                 ))}
             </ul>
-            <Button onClick={viewSemesterClick}>View Semesters</Button>
+            <Button onClick={viewSemesterClick}>View Plan</Button>
             <Button onClick={goBackClick}>Go Back to Degree Plans</Button>
         </div>
     );
